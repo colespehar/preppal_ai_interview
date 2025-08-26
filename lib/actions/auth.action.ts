@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use server";
 
 import { auth, db } from "@/firebase/admin";
@@ -79,6 +80,7 @@ export async function signIn(params: SignInParams) {
             };
 
         await setSessionCookie(idToken);
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error: any) {
         console.log("");
 

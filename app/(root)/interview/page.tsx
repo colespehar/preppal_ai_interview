@@ -1,5 +1,4 @@
-// correct relative import:
-import Agent from "../../../components/Agent";
+import Agent from "@/components/Agent";
 import { getCurrentUser } from "@/lib/actions/auth.action";
 
 const Page = async () => {
